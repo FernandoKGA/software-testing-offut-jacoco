@@ -1,0 +1,8 @@
+services:
+  test-jacoco:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: mvn clean test
+    volumes:
+      - .:/code
